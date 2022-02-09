@@ -1,0 +1,162 @@
+/*
+    Created on : 2016-12-16, 13:40:46
+    Author     : Sławomir Netteria.NET https://netteria.net
+*/
+
+#closer_videopopup{
+    position: absolute;
+    display: table-cell;
+    right: 19%;
+    top: 13%;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+    cursor: default;
+    background: none;
+    border: none;
+    color: #ffffff;
+
+
+    z-index: 100004;
+}
+#closer_videopopup2{
+    position: absolute;
+    display: table-cell;
+    right: 19%;
+    top: 13%;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+    cursor: default;
+    background: none;
+    border: none;
+    color: #ffffff;
+
+
+    z-index: 100004;
+}
+#opct{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.90;
+    opacity: 0.9;
+}
+#opct2{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.90;
+    opacity: 0.9;
+}
+#videCont{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: auto;
+    max-width: 720px;
+    height: 0;
+    height: auto !important;
+}
+#videCont2{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: auto;
+    max-width: 720px;
+    height: 0;
+    height: auto !important;
+}
+video{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    opacity: 1 !important;
+
+}
+#video1{
+    cursor: pointer; cursor: hand;
+}
+#video11{
+    cursor: pointer; cursor: hand;
+}
+
+/* video pop up */
+					.video-pop-up-box{ position:fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); z-index: 999999999;}
+				
+					.video-pop-up-box2{ position:fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); z-index: 999999999;}
+					
+					.video-pop-up-box12{ position:fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); z-index: 999999999;}
+					
+					.video-pop-up-box13{ position:fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); z-index: 999999999;}
+				    
+					.video-pop-up-box-player{ width:640px;height:360px}
+					
+					.video-pop-up-box .player-box{width:75%; max-width:900px; position:absolute; top:15%; left:50%; margin:0 0 0 -450px;}
+					
+					.video-pop-up-box2 .player-box{width:75%; max-width:900px; position:absolute; top:15%; left:50%; margin:0 0 0 -450px;}
+					
+					.video-pop-up-box12 .player-box{ width:100%; max-width:900px; position:absolute; top:15%; left:50%; margin:0 0 0 -450px;}
+					
+					.video-pop-up-box13 .player-box{ width:100%; max-width:900px; position:absolute; top:15%; left:50%; margin:0 0 0 -450px;}
+					
+					.vid-close{ position:absolute; top:-15px; right:-15px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+					.vid-close2{ position:absolute; top:-15px; right:-15px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+					.vid-close12{ position:absolute; top:-15px; right:-15px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+					.vid-close13{ position:absolute; top:-15px; right:-15px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+					.vid-img-icon{ padding:5px 80px 5px 0; margin:0; display:inline-block; position:relative;}
+					.vid-img-icon a.vid-icon{ padding:0 0 0 50px; margin:0; font-size:15px; color:#00aeef; background:url("/themes/musika_res/images/vid-img-icon.png") left 6px no-repeat; font-size:15px; color:#00aeef; min-height: 30px; display: inline-block; line-height:20px;}
+					.vid-img-icon a.vid-icon span{ color:#4a4a4a; display:block;}
+					 .vid-img-icon a.vid-icon:hover{color: #f17e2a;}
+																 
+					.vid-img-icon a.vid-rem-icon{ position:absolute; right:0; top:12px; padding:0 0 0 25px; margin:0; height:24px; line-height:24px; border-left:1px solid #ffc7c7; background:url("/themes/musika_res/images/vid-remove-icon.png") 10px 5px no-repeat; font-size:12px; color:#ff0000; display: inline-block;}
+																 
+								@media (max-width:580px){
+										.vid-img-icon{padding: 5px 10px 5px 0; display:block;}
+										.vid-img-icon a.vid-icon{ font-size:14px; padding:0 0 0 42px; background-size:35px auto;}
+										.vid-img-icon a.vid-rem-icon{ position:inherit; top:inherit; right:inherit; margin:10px 0 0 50px;}
+										.video-pop-up-box-player{ max-width:100%;max-height:100%}
+								}
+					
+					
+					@media (max-width:992px){
+						.video-pop-up-box .player-box{ max-width:800px; top:10%; margin:0 0 0 -350px;}
+						.video-pop-up-box2 .player-box{ max-width:800px; top:10%; margin:0 0 0 -350px;}
+						.video-pop-up-box12 .player-box{ max-width:700px; top:10%; margin:0 0 0 -350px;}
+						.video-pop-up-box13 .player-box{ max-width:700px; top:10%; margin:0 0 0 -350px;}
+						.video-pop-up-box-player{ max-width:100%;max-height:100%}
+						.mejs-overlay-button{display:none !important}
+						.mejs-overlay-loading{display:none !important}
+						
+					}
+					
+					@media (max-width:767px){
+					.video-pop-up-box .player-box{ max-width:95%; top:25px; margin-top: 0px; margin-right: 5%; margin-bottom: 0px; margin-left: 5%; left:0;}
+					.video-pop-up-box2 .player-box{ max-width:95%;top:25px; margin-top: 0px; margin-right: 5%; margin-bottom: 0px; margin-left: 5%; left:0;}
+						.video-pop-up-box12 .player-box{ max-width:90%; top:25px; margin:0 5%; left:0;}
+						.video-pop-up-box13 .player-box{ max-width:90%; top:25px; margin:0 5%; left:0;}
+						.video-pop-up-box-player{ max-width:340px;max-height:280px}
+					
+						.vid-close2{ position:absolute; top:-15px; right:-55px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+						.vid-close{ position:absolute; top:-15px; right:-55px; height:25px; width:25px; border-radius:50%; color:#000; font-size:15px; text-align:center; line-height:25px; z-index: 9999999991; cursor:pointer; background:#fff; box-shadow:0 0 5px #555;}
+						.mejs-overlay-button{display:none !important}
+						.mejs-overlay-loading{display:none !important}
+					}
+					

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Alerts e.g. approaching your limit</title>
+    
+</head>
+
+<body>
+@if($accountType=='Musika')
+	Hi Musika, <br/><br/>
+
+	Below teacher has updated his profile.<br/>
+	Name: {{$Name}}<br/>
+	Email: {{$Email}}<br/>
+	Address: {{$Address}}<br/>
+	City: {{$City}}<br/>
+	State: {{$State}}<br/>
+	Zip Code: {{$ZipCode}}<br/>
+	Phone: {{$Phone}}<br/>
+	Warning: Teacher has updated mailing address. Please update subscription list according to new address if required.<br/><br/>
+
+	From:<br/>
+	Musika Lessons
+	
+@elseif($accountType=='Teacher')
+	
+	Dear {{$fName}}, <br/><br/>
+	
+	You recently changed your profile in our records. <br/>
+	Your account information follows: <br/><br/>
+
+	=================================== <br/>
+	Name: {{$fName}} {{$lName}}<br/>
+	Email: {{$Email}}<br/>
+	Address: {{$Address}}<br/>
+	City: {{$City}}<br/>
+	State: {{$State}}<br/>
+	Zip Code: {{$ZipCode}}<br/>
+	Phone: {{$Phone}}<br/>
+	=================================== <br/><br/>
+
+	If you have any questions or suggestions please feel free to contact us at
+	contact@musikalessons.com or log on to http://system.musikalessons.com/
+	to learn more about Musika. <br/><br/>
+
+	Kindest Regards,<br/>
+	Musika<br/>
+	http://system.musikalessons.com/<br/><br/>
+
+	Warning: Teacher has updated mailing address. Please update subscription list according to new address if required. you must click at https://www.musikalessons.com/login and update it 
+
+@endif
+</body>
+</html>

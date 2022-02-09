@@ -1,0 +1,77 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a href="{{url('/')}}">
+                       
+						@if(Auth::check() && isset($avatar))
+						<span>
+                            <img alt="image" width="90%" class="img-circle" src="https://www.musikalessons.com/uploads/TeachersModel/{{Auth::User()->id}}/avatar/{{$avatar}}">
+                         </span>
+						  <span class="block m-t-xs">
+                                <strong class="font-bold"> @if(Auth::check()){{ Auth::user()->firstName }}@endif</strong>
+                           
+                        </span>
+						 @else
+						 
+						 <span>
+                            <img alt="image"  width="116px" height="116px" class="img-circle" src="{{url('img\profile.png')}}">
+                         </span>
+						  <span class="block m-t-xs">
+                                <strong class="font-bold"> @if(Auth::check()){{ Auth::user()->firstName }} {{ Auth::user()->lastName}}@endif</strong>
+                           
+                        </span>
+						 @endif
+                           
+                    </a>
+     
+                </div>
+                <div class="logo-element">
+                    ML+
+                </div>
+            </li>
+			<li>
+				<a href="{{ url('/') }}"><i class="fa fa-users"></i> <span class="nav-label">Account</span></a>
+			</li>
+			<li class="{{ isActiveRoute('profile.index') }}">
+				<a href="{{ route('profile.index') }}"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Profile</span></a>
+			</li>
+            
+			<li class="{{ isActiveRoute('home') }}">
+				<a href="{{ route('home') }}"><i class="fa fa-users"></i> <span class="nav-label">Students</span></a>
+			</li>
+			<li class="{{ isActiveRoute('invoice') }}">
+				<a href="{{ url('/invoice') }}"><i class="fa fa-calculator"></i> <span class="nav-label">Invoices</span></a>
+			</li>
+			<li>
+				<a href="{{ url('/') }}"><i class="fa fa-paper-plane-o"></i> <span class="nav-label">Submit Entry</span></a>
+			</li>
+			  
+			 <li class="{{ isActiveRoute('minor') }}">
+				<a href="/terminateLessons"><i class="fa fa-bullhorn"></i><span class="nav-label">Terminate Student</span></a>
+			 </li>
+			  <li class="{{ isActiveRoute('handbook') }}">
+				<a href="{{ url('/handbook') }}"><i class="fa fa-question-circle"></i><span class="nav-label">FAQ</span></a>
+			 </li>
+			 <li  class="{{ isActiveRoute('minor') }}">
+			 <a href="{{ url('/') }}"><i class="fa fa-user-circle"></i><span class="nav-label">Available students</span></a>
+			 </li>
+			 <li class="{{ (strpos($_SERVER['REQUEST_URI'], 'helpvideo'))?'active':''  }}">
+				<a href="#"><i class="fa fa-file-video-o"></i> <span class="nav-label">Help Videos</span><span class="fa arrow"></span></a>
+			 <ul class="nav nav-second-level collapse">
+                    <li class="{{ isActiveRoute('requesting-student') }}"><a href="{{ route('requesting-student') }}"><span class="nav-label"> Requesting Students</span></a></li>
+                    <li class="{{ isActiveRoute('intro-lesson') }}"><a href="{{ route('intro-lesson') }}"><span class="nav-label">Submitting Intro Lesson</span></a></li>
+                    <li class="{{ isActiveRoute('change-status') }}"><a href="{{ route('change-status') }}"><span class="nav-label"> Change Student Status</span></a></li>
+                    <li class="{{ isActiveRoute('loggging-lessons') }}"><a href="{{ route('loggging-lessons') }}"><span class="nav-label"> Loggging Lessons</span></a></li>
+					
+                  
+               </ul>
+               
+            </li>
+			
+			
+        </ul>
+
+    </div>
+</nav>

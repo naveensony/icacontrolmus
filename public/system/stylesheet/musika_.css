@@ -1,0 +1,228 @@
+body, table	{
+	font-family:Calibri, 'Lucida Grande', Tahoma, Geneva, Lucida, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-style:normal;
+	font-weight:normal;
+}
+/*b, strong, th	{font-weight:bold;}
+i, em	{font-style:italic;}
+u	{text-decoration:underline;}
+s, strike	{text-decoration:line-through;}*/
+body	{
+	background:#EEE url("../images/bg1.gif") repeat-x;
+	margin:0px; text-align:center;
+}
+img	{border:0;}
+.maincntr	{
+	background:#E2E2E2 url("../images/bg1g.gif") repeat-x;
+	text-align:left; width:750px; margin:0px auto;
+	padding-top:9px; padding-bottom:9px;
+}
+.primary {
+	color: #000000;
+/*	color: #145A8C; */
+	text-decoration: none;
+	background-color: #E3E8FF;
+	border-right:1px solid #aaa;
+	border-left:1px solid #aaa;
+}
+.para {
+	font-size: 16px;
+	font-weight: bold;
+	color: #145A8C;
+	background-color: #E3E8FF;
+	text-decoration: none;
+	border-right:1px solid #aaa;
+	border-left:1px solid #aaa;
+}
+.parahead {
+	font-size: 16px;
+	font-weight: bold;
+	color: #145A8C;
+	background-color: #E3E8FF;
+	text-decoration: none;
+	/*border-right:1px solid #aaa;
+	border-left:1px solid #aaa;*/
+}
+.faq, .priv {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.text, .validate {
+	color: #000000;
+	text-decoration: none;
+}
+a.text:visited{
+	color: #484848;
+	text-decoration: none;
+}
+a.text:hover {
+	color: #145A8C;
+	text-decoration: underline;
+}
+.menu {
+	font-family: Tahoma, 'Lucida Grande', Geneva, Lucida, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #382611;
+	text-decoration: none;
+}
+.Rightboxtext a.menu	{
+	color:#2E79B0;
+}
+a.menu:visited {
+	color: #40c0ff;
+	text-decoration: none;
+}
+a.menu:hover {
+	color: orange;
+	text-decoration: underline;
+}
+.toplinks	{/*
+	width:100%;
+	padding:0px; margin:0px;
+	border:0px solid blue;
+	white-space:nowrap;
+	text-align:justify;*/
+	background:#b3b8d2 url("../images/navbg.gif") left center repeat-x;
+}
+.bgover	{
+	font-weight:bold;
+}
+#navcontainer	{
+	margin-left:auto; margin-right:auto;
+	height:auto;
+	font-weight: bold;
+	/*border-top: 1px solid #9CC;
+	background: #369;
+	font: normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+}
+#navcontainer ul	{
+	list-style:none;
+	padding:0; margin:0;
+	text-align: center;
+	position:relative;
+}
+
+#navcontainer li	{
+	display:inline;
+	text-align:center;
+	margin:0; padding:0;
+}
+
+#navcontainer li a	{
+	padding:2px 1em;
+	color:#382611;
+	border:0px solid #ccc;
+	border:0; border-left:1px solid #ccc; border-right:1px solid #ccc;
+	text-decoration: none;
+}
+
+#navcontainer li a:hover	{
+	color:#395AB0;
+	background:url("../images/navbg_on.gif") left bottom;
+	/*border:1px solid #666;
+	border-top: 2px solid #666;
+	border-bottom: 2px solid #666;*/
+}
+
+#navcontainer li a#current	{
+}
+/*td a.menu:link	{
+	background-image:none;
+}
+td a.menu:visited	{
+	background-image:none;
+}*/
+.bottomlink	{
+	color:black;
+	font-weight:bold;
+}
+.Rightboxtitles {
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #006699;
+	font-weight: bold;
+	background: url(../images/grad.gif) repeat-x center;
+	color:#395AB0;
+	margin-top:1em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.Rightboxtext {
+	padding:0 1ex;
+	text-align:center;
+}
+.rightbox {
+	background-color: #FFFFFF;
+	border-left-width: 0.2px;
+	border-left-style: solid;
+	border-left-color: #006699;
+}
+
+.textU {
+	color: #000000;
+	text-decoration: underline;
+
+}
+
+a.textU:hover {
+	color: #145A8C;
+	text-decoration: underline;
+
+}
+.textreg {
+	color: #000000;
+	text-decoration: none;
+}
+
+.somestyle {
+	color:#333333;
+}
+
+.whiteBlock {
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+.blueBlock {
+	background-color: #98B0C5;
+	color: #000000;
+}
+
+.greenBlock {
+	background-color: #F3FFE8;
+	color: #000000;
+}
+
+.freeBlock {
+	background-color: #F3FFE8;
+	color: #000000;
+}
+
+.grayBlock {
+	background-color: #CCCCCC;
+	color: #333333;
+}
+.quoted {quotes: '"', '"', "'", "'"; font-style:italic;}
+.quoted:before {
+	content:open-quote;
+}
+.quoted:after {
+	content:close-quote;
+}
+.capped:after {
+	content:url("../images/grad_cap.gif");
+	display:inline;
+	vertical-align:-7px;
+}
+.dcapped:before {
+	content:url("../images/grad_cap_l.gif");
+	display:inline;
+	vertical-align:-7px;
+}
+.dcapped:after {
+	content:url("../images/grad_cap.gif");
+	display:inline;
+	vertical-align:-7px;
+}

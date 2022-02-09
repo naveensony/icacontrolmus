@@ -1,0 +1,267 @@
+@extends('layouts.app')
+@section('custom_css')
+
+<style>
+.text-center1 {
+    margin-left: 262px;
+}
+b, strong {
+    font-weight: 500;
+}
+.nbl {
+    margin-top: 13px;
+}
+.number-only { 
+	
+	padding: 5px!important; 
+	
+}
+</style>
+@endsection 
+@section('content')
+
+<?php //if(isset($input_data)){print_r($input_data);} ?>
+<div class="row wrapper border-bottom white-bg page-heading">
+   <div class="col-sm-10">
+      <h2>Search Prospective Students</h2>
+	  <small>This page is constantly changing! The last action was taken 05/07/2018. As new students make requests and are placed with our contracted teachers, this page will change. </small>
+   </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+   <div class="row">
+   	
+				@if ($errors->any())
+					<div class="alert alert-danger">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
+      <form class="form-horizontal" name="frmPStudents" id="frmPStudents" action="{{route('searchProspective')}}" method="post">
+         {{csrf_field()}}
+		 
+         <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+               <div class="ibox-title">
+               </div>
+               <div class="ibox-content">
+<div class="form-group">
+	<label class="col-sm-2 control-label">Select Instrument(s)</label>
+		<div class="col-sm-10">
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="1" @if (isset($input_data['lstInstr']) && in_array(1, $input_data['lstInstr'])) checked @endif />Bass</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="3" @if (isset($input_data['lstInstr']) && in_array(3, $input_data['lstInstr'])) checked @endif />Cello</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="4" @if (isset($input_data['lstInstr']) && in_array(4, $input_data['lstInstr'])) checked @endif />Clarinet</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="5" @if (isset($input_data['lstInstr']) && in_array(5, $input_data['lstInstr'])) checked @endif />Drum</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="6" @if (isset($input_data['lstInstr']) && in_array(6, $input_data['lstInstr'])) checked @endif />Flute</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="8" @if (isset($input_data['lstInstr']) && in_array(8, $input_data['lstInstr'])) checked @endif />Guitar</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="10" @if (isset($input_data['lstInstr']) && in_array(10, $input_data['lstInstr'])) checked @endif />Piano</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="11" @if (isset($input_data['lstInstr']) && in_array(11, $input_data['lstInstr'])) checked @endif />Saxophone</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="12" @if (isset($input_data['lstInstr']) && in_array(12, $input_data['lstInstr'])) checked @endif />Trombone</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="13" @if (isset($input_data['lstInstr']) && in_array(13, $input_data['lstInstr'])) checked @endif />Trumpet</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="14" @if (isset($input_data['lstInstr']) && in_array(14, $input_data['lstInstr'])) checked @endif />Viola</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="15" @if (isset($input_data['lstInstr']) && in_array(15, $input_data['lstInstr'])) checked @endif />Violin</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="16" @if (isset($input_data['lstInstr']) && in_array(16, $input_data['lstInstr'])) checked @endif />Voice</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="25" @if (isset($input_data['lstInstr']) && in_array(25, $input_data['lstInstr'])) checked @endif />Mandolin</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="29" @if (isset($input_data['lstInstr']) && in_array(29, $input_data['lstInstr'])) checked @endif />Banjo</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="40" @if (isset($input_data['lstInstr']) && in_array(40, $input_data['lstInstr'])) checked @endif />Harmonica</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="48" @if (isset($input_data['lstInstr']) && in_array(48, $input_data['lstInstr'])) checked @endif />Ukelele</label></div>
+			<div class="col-md-2"><label class="checkbox-inline"><input type="checkbox" name="lstInstr[]" value="51" @if (isset($input_data['lstInstr']) && in_array(51, $input_data['lstInstr'])) checked @endif />Accordion</label></div>
+		</div>
+	
+</div>
+<div class="hr-line-dashed"></div>
+	<div class="form-group">
+	<label class="col-sm-2 control-label">Select Lessons Location</label>
+		<div class="col-sm-10">
+	
+		<div class="col-md-10" style="width: 100%;">
+	<label class="nbl"><input name="s_location[]" class="chkit" id="s_location" value="0" type="checkbox"  @if (isset($input_data['s_location']) && in_array(0, $input_data['s_location'])) checked @endif >
+		 In Student's Home within 
+			<select id="s_location_miles" class="number-only" name="s_location_miles" style="width:100px;" class="choicebox">   
+				@for ($i = 1; $i < 101; $i++)
+				<option @if(isset($input_data['s_location_miles']) && $input_data['s_location_miles']==$i) selected @endif value="{{ $i }}">{{ $i }}</option>
+				@endfor
+				
+				
+        </select> miles of zipcode <input size="9" name="s_zip" id="s_zip" value="{{ $input_data['s_zip'] or '' }}" class="number-only" placeholder="Zip Code" type="text"><span id="s_ziperrmsg" style="display: none;padding-left:5px">Digits Only</span> </label></div>
+<div class="col-md-10">
+		<label class="nbl"><input class="chkit" name="s_location[]" id="s_location" value="1" type="checkbox" @if (isset($input_data['s_location']) && in_array(1, $input_data['s_location'])) checked @endif > At my location/studio in zipcode <input name="s_location_zipt" id="s_location_zipt" value="{{ $input_data['s_location_zipt'] or '' }}" size="9" class="number-only" placeholder="Zip Code" type="text"><span id="s_location_zipterrmsg" style="display: none;padding-left:5px">Digits Only</span></label></div>
+
+<div class="col-md-10">
+<label class="nbl">
+<input class="chkit" name="s_location[]" id="s_location" value="2" type="checkbox" @if (isset($input_data['s_location']) && in_array(2, $input_data['s_location'])) checked @endif > Online
+</label>
+</div>
+	</div>
+		</div>
+			<div class="form-group">
+		<label class="col-sm-2 control-label"></label>
+		<div class="col-sm-10">
+		<div class="col-md-10">
+		<span><small>Loading of records may take some time after clicking search. Please be patient.</small></span>
+		</div>
+		</div>
+		</div>
+		<div class="form-group">
+	<label class="col-sm-2 control-label"></label>
+		<div class="col-sm-10">
+		
+		<div class="col-md-5">
+		
+		<input type="submit" class="btn btn-primary loading open-circle" value="Search"> 
+		
+		
+		
+		</div>
+		</div>
+		</div>
+	
+		
+		</div>
+
+        
+
+  </div>
+
+        
+   </div>
+</form>
+</div>
+<!-- {if not $smarty.get.override}teachers/sr_request.php{else}cms.php?page=teacher_request_student{/if}-->
+<form action="{{route('prospectives_request')}}" name="frmStudents" method="post" onsubmit="return validate_request(this);">
+{{csrf_field()}}
+	@if(!empty($metros))
+		<div class ="row paddingzero">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<div class="table-responsive" style="overflow-x: hidden;">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th width="2%"></th>
+										<th class="prospective1" >INS</th>
+										<th class="prospective2" >LEVEL</th>
+										<th class="prospective3" >ENTERED ON</th>
+										<th class="prospective4" >Age</th>
+										<th class="prospective5" ></th>
+										<!--<th class="" width="50%">LESSON LOCATION</th>
+										<th class="five1">LESSON LENGTH</th>
+										<th >AVAILABLE START TIMES</th>-->
+										
+									</tr>
+								</thead>
+								<tbody class="personal">
+							@php $row_cnt = 1; @endphp
+							@foreach($metros['CSTUDENTS'] as $students)
+								@php 
+								$cnt=1; 
+								if($row_cnt % 2 == 0){
+									 $color = "f1f8ff";
+								}
+								else
+								{
+									 $color = "f6f8fa";
+								}
+								@endphp
+								@foreach($students as $data)
+									
+									<tr style="background:#{{$color}}">
+									<input type="hidden" name="std{{$data['studentId']}}" value="{{$data['studentId']}}" />
+										@if($cnt==1 and $cnt < count($students))
+										@php	$rowspan_cnt = count($students)*2; @endphp
+										<td rowspan="{{$rowspan_cnt}}"> <input class="chkit" name="chkStudentId[]"  value="{{$data['idNum']}}" type="checkbox"></br> </td>
+										@elseif($cnt==1 and $cnt == count($students))
+											<td rowspan="2"> <input class="chkit" name="chkStudentId[]"  value="{{$data['studentId']}}" type="checkbox"></br> </td>
+										@endif
+									@php	$cnt++; @endphp
+										
+										<td class="">{{$data['instrument_name']}}</td>
+										<td class="">{{$data['iLevel']}}</td>
+										<td class="" style="white-space: inherit" ><?php echo date('F d,Y', $data['entered_on']).' '; ?> {{$data['idNum']}}</td>
+										<td class="">{{$data['age']}}</td>
+										<td class=""></td>
+									</tr><tr style="background:#<?php echo $color; ?>">
+										
+										<td class="" colspan="5" style="white-space: inherit">@if($data['is_home'])
+											@if ($data['is_both'])
+											 At
+											@else
+											<strong>ONLY</strong> at
+											@endif
+											student's home in <a href="http://maps.google.com/?q={{$data['zipCode']}}" target="_blank">{{$data['tmp_address']}} {{$data['city']}}, {{$data['stateId']}} {{$data['zipCode']}}</a>
+											@endif
+											@if($data['is_both'])
+											</br>OR</br> 
+											@endif
+											
+											@if ($data['is_studio'])
+												
+												@if($data['is_both'])
+													At
+												@else
+												<strong>ONLY</strong> at
+												@endif
+												teachers's home or studio within {{$data['studio_distance']}} miles of <a href="http://maps.google.com/?q={{$data['studio_zip']}}" target="_blank">{{$data['studio_zip']}}</a> (Musika does not provide teaching facilities)
+										@endif
+										</br>FOR 
+										{{$data['lessonLen']}} </br>ON 
+										@if ($data['lessonStartMon']!="") 
+											Mon ({{$data['lessonStartMon']}}),@endif 
+										@if ($data['lessonStartTue']!="")
+											Tues ({{$data['lessonStartTue']}}), @endif
+										@if ($data['lessonStartWed']!="")
+											Wed ({{$data['lessonStartWed']}}),@endif</br> 
+										@if ($data['lessonStartThu']!="")
+											Thurs ({{$data['lessonStartThu']}}), @endif 
+										@if ($data['lessonStartFri']!="")
+											Fri ({{$data['lessonStartFri']}}), @endif
+										@if ($data['lessonStartSat']!="")
+											Sat ({{$data['lessonStartSat']}}), @endif
+										@if ($data['lessonStartSun']!="")
+											Sun ({{$data['lessonStartSun']}}) @endif</td>
+									</tr>
+								@endforeach	<?php $row_cnt++;?>	
+							@endforeach	
+								
+								<!--	<tr style="background:#f6f8fa">
+										<td rowspan="4"><input class="chkit" name="student2[]" id="student2" value="2" type="checkbox"></br></td>
+										<td class="">Cello</td>
+										<td class="">Novice</td>
+										<td class="" style="white-space: inherit">May 29, 2017 NY0530YJBTEZ-1</td>
+										<td class="">12</td>
+									</tr><tr style="background:#f6f8fa">
+										<td class="" colspan="4" style="white-space: inherit">At student's home in <a href="#">NEW YORK, NY 10034</a>OR At teachers's home or studio within 3 miles of <a href="#">10034</a> (Musika does not provide teaching facilities) FOR
+										60 minutes ON 9:00AM - 5:00PM</td>
+									</tr>
+									<tr style="background:#f1f8ff">
+										<td class="">Cello</td>
+										<td class="">Novice</td>
+										<td class="" style="white-space: inherit">Oct 6, 2017 NY1007DOPLOH-1</td>
+										<td class="">adult</td>
+									</tr><tr style="background:#f1f8ff">
+										<td class="" colspan="4" style="white-space: inherit">ONLY at student's home in RICHMOND HILL, NY <a href="#">11418</a> FOR 45 minutes ON 
+										2:30PM - 11:00PM</td>
+									</tr>-->
+										
+								</tbody>
+						  </table>
+						</div> 
+					 </div> 
+				 </div> 
+			 </div>
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<!--<button class="btn btn-primary">Request selected students <span class="loading open-circle"></span> </button>-->
+						<input type="submit" class="btn btn-primary loading open-circle" value="Request selected students"> 
+					</div>
+				</div>	
+			</div>	
+		</div>	
+		@endif	
+	</form>		
+ </div>
+@endsection

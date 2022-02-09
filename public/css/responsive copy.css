@@ -1,0 +1,212 @@
+@media(min-width:1200px){
+	.container {
+		width: 1170px;
+	}
+	.testimonials .carousel-control-next {
+		right: -240px;
+	}
+	.testimonials .carousel-control-prev {
+		left: -240px;
+	}
+}
+@media(max-width:1199px){
+	.gift-certificates-top.w-25 {
+		width: 33% !important;
+	}
+	.navbar-nav.custom-nav > li > a, ul.top-nav li a {
+		font-size: 15px;
+		padding: 8px 10px !important;
+	}
+	.banner .banner_content h1 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.carousel-control-prev {
+		left: -110px;
+	}
+	.carousel-control-next {
+		right: -110px;
+	}
+}
+@media(min-width:992px){
+	ul.top-nav.text-end {
+		top: -5px;
+		position: relative;
+		z-index: 99;
+	}
+	nav.navbar.navbar-expand-lg.navbar-light.p-0.custom-navigation {
+		position: relative;
+		top: -30px;
+	}
+	.custom-nav, nav.navbar button.btn-custom-color {
+		position: relative;
+		top: 15px;
+	}
+	.gift-wrapper {
+		top: -25px;
+	}
+	.fixed-top {
+		max-height: 128px;
+	}
+	section.banner {
+		margin-top: 127px;
+	}
+	.music-lesson .col-md-6 {
+		width: 25%;
+	}
+	.custom-slider-testimonials {
+		max-width: 75%;
+		margin: 0 auto;
+	}
+	.carousel-control-prev {
+		left: -35px;
+	}
+	.carousel-control-next {
+		right: -35px;
+	}
+	section.today-section .container {
+		max-width: 900px;
+	}
+	.now_box.wow {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+@media(max-width:991px){
+	ul.top-nav.text-end {
+		text-align: center !important;
+		padding: 5px 0 0;
+	}
+	.navbar-collapse {
+		background: #f0f0f0;
+		padding: 15px;
+		border-top: 4px solid #00aeef !important;
+	}
+	.custom-navigation .btn-custom-color {
+		margin-left: 0;
+	}
+	.gift-certificates-top p {
+		font-size: 11px;
+	}
+	.gift-wrapper p::before {
+		display:none;
+	}
+	.banner .banner_content h1 {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	section.banner {
+		margin-top: 158px;
+	}
+	section.banner {
+		padding: 100px 0;
+	}
+	.home_logos li {
+		display: inline-block;
+	}
+	h2.heading {
+		font-size: 35px;
+	}
+	.out-risk h2 {
+		font-size: 50px;
+	}
+	.carousel-control-next, .carousel-control-prev{
+		display:none;
+	}
+	.featured  .featured li a {
+		font-size: 14px;
+	}
+
+}
+@media(max-width:991px)and (min-width:768px){
+	.ss-large {
+		width: 190px;
+		height: 190px;
+	}
+	.btn-blue {
+		font-size: 16px;
+		padding: 10px 19px;
+	}
+}
+@media(max-width:767px){
+	.gift-certificates-top, ul.top-nav.text-end {
+		display: none;
+	}
+	.homesearch_wrap {
+		margin-top: 5px;
+	}
+	.search_fullrow i.fas.fa-map-marker-alt {
+		position: absolute;
+		top: 32%;
+	}
+	.banner .banner_content h1 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	section.banner {
+		margin-top: 105px;
+	}
+	ul.lesson_loc li {
+		font-size: 25px;
+		padding-right: 20px;
+	}
+	.footer-m {
+		margin-right: 0;
+		width: 100%;
+		display: block;
+		float: left;
+	}
+	.footer-m ul.footer-lt a {
+		line-height: 32px;
+	}
+	h2.heading {
+		font-size: 30px;
+	}
+	.out-risk h2 {
+		font-size: 48px;
+	}
+	.instrument_ser_list .col-md-4.col-xs-12.col-sm-12.col-xl-4.col-xxl-4 {
+		margin-bottom: 40px;
+	}
+}
+
+@media(max-width:575px){
+	form.need-validation .text-end {
+		text-align: left !important;
+	}
+}
+@media(max-width:480px){
+	.custom-navigation a.navbar-brand {
+		max-width: 180px;
+	}
+	.custom-navigation {
+		padding: 10px 0 !important;
+	}
+	.gift-wrapper::after {
+		width: 100%;
+	}
+	.gift-wrapper  p {
+		font-size: 11px;
+	}
+	.home_search {
+		width: 100% !important;
+	}
+	.banner .banner_content h1 {
+		font-size: 21px;
+		line-height: 24px;
+	}
+	section.banner {
+		margin-top: 110px;
+	}
+	ul.lesson_loc li {
+		font-size: 13px;
+		padding-right: 10px;
+	}
+	h2.heading {
+		font-size: 25px;
+	}
+	.out-risk h2 {
+		font-size: 28px;
+	}
+}
+

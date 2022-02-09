@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* Visual Admin */
+
+a.btn_charge {
+	background-image: url(../images/buttons/charge.png);
+	display: block;
+	width: 95px;
+	height: 29px;
+	text-indent: -1000px;
+	float: right;
+}
+a.btn_refund {
+	background-image: url(../images/buttons/refund.png);
+	display: block;
+	width: 95px;
+	height: 29px;
+	text-indent: -1000px;
+	float: right;
+}

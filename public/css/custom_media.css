@@ -1,0 +1,208 @@
+ .eight1{display:none}
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+	   .five{
+         display: none;
+    }
+     .four{
+         display: none;
+    }
+     .three{
+         display: none;
+    }
+     .onetop {
+         display: none;
+    }
+     .paddingzero .ibox-content {
+         padding: 0;     font-size: 13px;
+    }
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+		padding-right: 0px !important; 
+		padding-left: 0px !important; 
+	}
+	.status
+	{
+		white-space: inherit !important;
+	}
+	
+	.a{
+		
+		    word-wrap: break-word;
+	}
+     .minimalize-styl-2 {
+         display:block !important;
+    }
+	.logo { 
+		margin-left: 74px !important;
+		margin-top: 5px !important;
+	}
+	.text-center1 {
+		margin-left: 0px !important;
+	}
+
+	.chkit
+	{
+		margin-top: 2px;
+	}
+	#s_location_miles{
+		
+		margin-top: 4px;
+	}
+	.nbl
+	{
+		margin-top: 18px;
+	}
+	.number-only { 
+		border-top: 1px solid !important;
+		padding: 5px!important; 
+		margin-top: 5px !important;
+	}
+
+	.nav-header {
+		padding: 6px 18px !important; 
+	}
+
+
+	 .four1{
+         display: none;
+    }
+	 .five1{
+         display: none;
+    }
+	.six1{
+         display: none;
+    }
+	
+	.seven1{
+         display: none;
+    }
+	.eight1{display:table-cell}
+	.inst
+	{
+		 display: none;
+	}
+	.col-md-1.inst
+	{
+		 display: none;
+	}
+	.seb
+	{
+		 display: none;
+	}
+	.table-responsive 
+	{
+		white-space: unset !important;
+	}
+		.media-body a{
+		
+		
+    margin-top: 12px;
+	
+	}
+	.cent{
+		margin-right: 68px;
+		margin-top: -8px;
+	}
+
+	.prospective1 {
+		width: 10%;
+	}
+	.prospective2 {
+		width: 23%;
+	} 
+	.prospective3 {
+		width: 45%;
+	} 
+	.prospective4 {
+		width: 15%;
+	} 
+	.prospective5 {
+		width: 5%;
+	}
+	.hideMobile{
+		display:none;
+	}
+
+
+	.mobile-padding{
+		padding: 15px 2px 20px !important;
+	}
+	/* .fc-toolbar .fc-right {
+		float: right;
+		margin: 8px;
+	}
+ */
+	.calendar-margin {
+		padding: 5px 0px 40px !important;
+	}
+	
+	.tooltipevent{
+		display:none !important;
+	}
+	.wizard > .steps > ul > li
+	{
+		width: 33%;
+	}
+
+}
+
+ @media screen and (min-width: 320px) and (max-width: 980px) {
+	.form-group .col-md-2 {
+		float: left;
+		width: 50%;
+	}
+ }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+	  
+		.onetop{
+			 display: -webkit-inline-box;
+		}
+		/* .minimalize-styl-2 {
+			 display:block !important;
+		} */
+		
+	 
+	 }
+@media screen and (min-width: 768px) and (max-width: 811px) {
+	.minimalize-styl-2 {
+			 display:block !important;
+		}
+	.logo { 
+			margin-left: 74px !important;
+			margin-top: 5px !important;
+		}		
+	 }		 
+@media screen and (min-width: 1024px) and (max-width: 1123px) {
+	  .onetop
+		{
+			 display: -webkit-inline-box;
+		}
+	 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.personal tr td {
+		padding: 8px 4px !important;;
+	}
+ }
+
+@media (min-width: 768px){
+	.prospective1 {
+		width: 10%;
+	}
+	.prospective2 {
+		width: 13%;
+	} 
+	.prospective3 {
+		width: 30%;
+	} 
+	.prospective4 {
+		width: 10%;
+	} 
+	.prospective5 {
+		width: 35%;
+	} 
+	div.fc-view.fc-month-view.fc-basic-view div.fc-day-grid-container.fc-scroller {
+		overflow-y: hidden !important;
+	}
+} 

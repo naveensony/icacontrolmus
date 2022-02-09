@@ -1,0 +1,28 @@
+ .strip .grayBlock {
+     border: 1px solid black;
+     background: #cccccc;
+}
+ .strip .whiteBlock {
+     border: 1px solid black;
+     background: #f9f9f9;
+}
+ ul.strip li {
+     padding: 0.5ex 0;
+     margin: 0;
+}
+ ul.strip {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+ 
+ 
+ .nav-header
+ {
+	  padding: 9px 40px ;
+ }
+ .m-t-xs {
+    margin-right: 26px !important;
+    margin-top: 1px !important;
+    text-align: center !important;
+}
